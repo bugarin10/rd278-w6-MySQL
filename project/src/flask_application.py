@@ -23,6 +23,6 @@ def index():
     return render_template("index.html")
 
 
-# @app.route("/make_query")
-# def query():
-#    return render_template("query.html")
+@app.route("/make_query")
+def query():
+    return render_template("query.html")
