@@ -2,6 +2,18 @@
 
 {% block content%}
 
-<h1>Make Query</h1>
+<h2>Here you can write a query to be implemented in the database:</h2>
+<br/>
+<form method="POST">
+
+    {{form.hidden_tag()}}
+
+    {{form.query_by_user.label}}
+    {{form.query_by_user}}
+    <br/>
+    {{form.submit()}}
+
+</form>
+
 
 {% endblock %}
