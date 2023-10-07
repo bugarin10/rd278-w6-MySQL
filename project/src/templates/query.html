@@ -8,10 +8,10 @@
 
     {{form.hidden_tag()}}
 
-    {{form.query_by_user.label}}
-    {{form.query_by_user}}
+    {{form.query_by_user.label(class="form-label")}}
+    {{form.query_by_user(class="form-control")}}
     <br/>
-    {{form.submit()}}
+    {{form.submit(class="btn btn-primary")}}
 
 </form>
 
