@@ -3,8 +3,8 @@
 # Variables
 PYTHON := python3
 VENV := env
-SRC_DIR := pythonfiles/src
-TEST_DIR := pythonfiles/tests
+SRC_DIR := project/src
+TEST_DIR := project/tests
 REQUIREMENTS := requirements.txt
 
 # Default target
@@ -14,7 +14,7 @@ REQUIREMENTS := requirements.txt
 # Install project dependencies
 
 env:
-	$(PYTHON) -m venv $(VENV); . $(VENV)/bin/activate
+	$(PYTHON) -m venv $(VENV)
 
 install:
 	$(VENV)/bin/pip install --upgrade pip -r  $(REQUIREMENTS)
