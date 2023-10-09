@@ -30,7 +30,7 @@ def doing_query(query_by_user):
 
         # for row in results:
         #    print(row)
-        print(columns)
+        # print(columns)
         cursor.close()
         cnx.close()
         return results, columns, n_columns
