@@ -15,6 +15,20 @@
 
 </form>
 
+<h2>Here you can see the results query:</h2>
+
+<br/>
+
+{% if results is not none %}   
+    {%for result in results%}
+        {{result}}<br/>
+    {%endfor%}
+{% else %}
+    NONE
+{% endif %}
+
+
+
 
 
 
